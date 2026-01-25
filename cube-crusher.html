@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Crusher - Rules | Colosseum 2k26</title>
+    <link rel="icon" type="image/png" href="img/logo_.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .rules-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .rules-nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .rules-nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .rules-nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            border: 1px solid transparent;
+            white-space: nowrap;
+        }
+
+        .rules-nav-link:hover {
+            color: var(--primary-color);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--border-color);
+        }
+
+        .rules-nav-link.active {
+            color: var(--primary-color);
+            background: rgba(6, 182, 212, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .rules-nav-home {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            font-weight: 600;
+        }
+
+        .rules-nav-home:hover {
+            background: linear-gradient(135deg, #2563eb, #0891b2);
+            color: white;
+        }
+
+        .rules-page {
+            padding-top: 120px;
+            min-height: 100vh;
+        }
+
+        .rules-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            background: rgba(6, 182, 212, 0.1);
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .rules-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .event-rules {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .event-rules:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+            border-color: var(--primary-color);
+        }
+
+        .event-rules-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .event-rules-header img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            filter: brightness(0.9);
+        }
+
+        .event-rules-header h2 {
+            font-size: 2rem;
+            color: white;
+            margin: 0;
+        }
+
+        .rules-content h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .rules-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rules-content li {
+            color: var(--text-light);
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        .rules-content li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .rules-content p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box {
+            background: rgba(6, 182, 212, 0.1);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            color: white;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .event-rules-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .event-rules {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Rules Navigation Bar -->
+    <nav class="rules-navbar">
+        <div class="rules-nav-container">
+            <ul class="rules-nav-menu">
+                <li><a href="index.html" class="rules-nav-link rules-nav-home">🏠 Home</a></li>
+                <li><a href="build-the-building.html" class="rules-nav-link">Build the Building</a></li>
+                <li><a href="testing-an-engineer.html" class="rules-nav-link">Testing an Engineer</a></li>
+                <li><a href="cad-catalog.html" class="rules-nav-link">CAD Catalog</a></li>
+                <li><a href="cube-crusher.html" class="rules-nav-link active">Cube Crusher</a></li>
+                <li><a href="paper-presentation.html" class="rules-nav-link">Paper Presentation</a></li>
+                <li><a href="surprise-event.html" class="rules-nav-link">Surprise Event</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="rules-page">
+        <div class="rules-container">
+            <div class="rules-header">
+                 
+                <h1 class="section-title">Cube Crusher - Rules & Regulations</h1>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="event-rules">
+                <div class="event-rules-header">
+                    <img src="img/cube_crusher.png" alt="Cube Crusher">
+                    <h2>Cube Crusher</h2>
+                </div>
+                <div class="rules-content">
+                    <h3>General Rules</h3>
+                    <ul>
+                        <li>Team event (2-3 members per team)</li>
+                        <li>Duration: 2.5 hours</li>
+                        <li>Standard concrete cubes will be provided</li>
+                        <li>Teams must predict the crushing strength before testing</li>
+                        <li>Actual testing will be done using compression testing machine</li>
+                    </ul>
+
+                    <h3>Rules and Regulation</h3>
+                    <ul>
+                        <li>Teams will receive concrete cubes of standard dimensions (150mm x 150mm x 150mm)</li>
+                        <li>Visual inspection and non-destructive testing allowed</li>
+                        <li>Teams must submit their predictions before actual testing</li>
+                        <li>Closest prediction to actual strength wins</li>
+                    </ul>
+
+                   
+
+                    <div class="highlight-box">
+                        <p><strong>Note:</strong> Safety equipment (gloves, safety glasses) will be provided. Participants must follow all safety protocols.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
