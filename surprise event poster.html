@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster - Colosseum 2k26</title>
+    <link rel="icon" type="image/png" href="img/logo_.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .poster-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px 50px;
+        }
+
+        .poster-container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .poster-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .poster-image:hover {
+            transform: scale(1.02);
+        }
+
+        .poster-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .poster-title {
+                font-size: 2rem;
+            }
+
+            .poster-section {
+                padding: 80px 15px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="Colosseum Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>COLOSSEUM 2K26</h1>
+                    <p>National Level Symposium</p>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About us</a></li>
+                <li><a href="index.html#events" class="nav-link">Events</a></li>
+                <li><a href="pic.html" class="nav-link">Gallery</a></li>
+                <li><a href="rules-and-regulation.html" class="nav-link">Rules</a></li>
+                <li><a href="poster.html" class="nav-link active">Poster</a></li>
+                <li><a href="https://www.rmkec.ac.in/2023/campus/transport/" class="nav-link">Bus Routes</a></li>
+                <li><a href="https://forms.gle/eyQdmjruHxHGbAMMA" target="_blank" rel="noopener noreferrer" class="nav-link register-btn">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Poster Section -->
+    <section class="poster-section">
+        <div class="poster-container">
+            <h1 class="poster-title">Colosseum 2K26 Poster</h1>
+            <img src="img/se.png" alt="Colosseum 2K26 Poster" class="poster-image">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Colosseum - R.M.K. Engineering College. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
